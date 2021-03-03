@@ -9,7 +9,7 @@
   --yellow: #fde24f;
   --black: #1b2d45;
   --darkBlue: #00214d;
-  --darkGrey: #222;
+  --darkGrey: #111;
   --grey: #bfbfbf;
   --lightGrey: #f2f4f6;
   --white: #fff;
@@ -49,7 +49,7 @@
   --level-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 
   /* Positioning */
-  --containerPadding: 2.5%;
+  --containerPadding: 1rem;
   --headerHeight: 3rem;
 }
 

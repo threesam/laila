@@ -24,9 +24,10 @@
 <script>
 	import {onMount} from 'svelte'
 	import {fade, scale} from 'svelte/transition'
+	import Contact from './_contact.svelte'
+	import SocialLinks from '../components/SocialLinks.svelte'
 
 	export let siteInfo
-	console.log(siteInfo)
 	const {title, image, alt} = siteInfo
 
 	let show = false
@@ -56,7 +57,7 @@
 	}
 
 	h1 {
-		font-size: 3rem;
+		font-size: 4rem;
 		padding: 0 1rem;
 		line-height: 1.1;
 	}
@@ -68,8 +69,14 @@
 
 <section>
 	{#if show}
-		<h1 id="{title}">{title}</h1>
-		<img in:scale={{duration:2000, start: 1.2, opacity: 0.9}} src={image} {alt}>
+		<div class="card">
+
+			<h1 id="{title}">{title}</h1>
+			<SocialLinks/>
+		</div>
+			<img in:scale={{duration:2000, start: 1.2, opacity: 0.9}} src={image} {alt}>
 	{/if}
 </section>
+
+<!-- <Contact /> -->
 
