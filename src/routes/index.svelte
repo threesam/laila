@@ -45,7 +45,7 @@
 		background-color: rgba(0,0,0,0.69);
 		overflow: hidden;
 	}
-
+	
 	img {
 		position: absolute;
 		top: 0;
@@ -57,7 +57,7 @@
 	}
 
 	h1 {
-		font-size: 4rem;
+		font-size: clamp(3rem, 5vw, 4rem);
 		padding: 0 1rem;
 		line-height: 1.1;
 	}
