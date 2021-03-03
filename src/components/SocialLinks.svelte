@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
     padding: 10px;
   }
 
@@ -12,6 +11,7 @@
     transition: all 0.3s;
     height: 40px;
     width: 40px;
+    margin: 0 1rem;
   }
 
   a:hover {
