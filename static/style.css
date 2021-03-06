@@ -163,7 +163,7 @@ small, .text_small {font-size: var(--smallText);}
 /* End type-scale */
 
 blockquote {
-  margin: 1em;
+  margin: 1em 0;
   padding: 2em;
   background: var(--cardBg);
   box-shadow: var(--level-3);
