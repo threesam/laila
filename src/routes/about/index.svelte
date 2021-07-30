@@ -39,7 +39,7 @@
 	<title>About</title>
 </svelte:head>
 
-<h1>About {name}</h1>
+<h1>About Laila</h1>
 
 <img src={image} {alt}>
 
