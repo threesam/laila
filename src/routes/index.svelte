@@ -24,8 +24,9 @@
 <script>
 	import {onMount} from 'svelte'
 	import {fade, scale} from 'svelte/transition'
-	import Contact from './_contact.svelte'
+	// import Contact from './_contact.svelte'
 	import SocialLinks from '../components/SocialLinks.svelte'
+	import SEO from '../components/SEO.svelte'
 
 	export let siteInfo
 	const {title, image, alt} = siteInfo
@@ -57,15 +58,12 @@
 	}
 
 	h1 {
-		font-size: clamp(3rem, 5vw, 4rem);
-		padding: 0 1rem;
+		font-size: 4rem;
 		line-height: 1.1;
 	}
 </style>
 
-<svelte:head>
-	<title>Laila Wolf</title>
-</svelte:head>
+<SEO {...siteInfo} description="A repository of work for Laila Wolf" />
 
 <section>
 	{#if show}

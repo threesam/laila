@@ -24,6 +24,7 @@
 <script>
 	import BlockContent from '@movingbrands/svelte-portable-text'
 	import serializers from '../../components/serializers'
+	import SEO from '../../components/SEO.svelte'
 
 	export let author
 	const { name, image, alt, caption, bio} = author
@@ -35,9 +36,7 @@
 	}
 </style>
 
-<svelte:head>
-	<title>About</title>
-</svelte:head>
+<SEO title="About Laila" description="Information about and links to the life and work of Laila Wolf" {image} {alt} />
 
 <h1>About Laila</h1>
 
